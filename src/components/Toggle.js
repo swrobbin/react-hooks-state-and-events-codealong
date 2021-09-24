@@ -5,11 +5,11 @@ function Toggle() {
   function clickHandler(){
     setIsOn(!isOn)
   }
-
+const color = isOn ? 'red' : 'white';
 
   return (
   
-  <button onClick={clickHandler} >{isOn ? "ON" : "OFF"}</button>
+  <button onClick={clickHandler} style={{color: color}}>{isOn ? "ON" : "OFF"}</button>
   )
 }
 
